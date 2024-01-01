@@ -24,7 +24,7 @@ const Navbar = () => {
             <p className="ml-2 mr-1">Pickup</p>
         </div>
       {/*middle section*/}
-      <div className="max-w-[250px] md:w-[900px]  flex items-center justify-start bg-gray-200 rounded-full px-1 py-1 gap-1">
+      <div className="max-w-[100px] md:w-[900px]  flex items-center justify-start bg-gray-200 rounded-full px-1 py-1 gap-1">
         <div className="">
             <AiOutlineSearch size={20} />
         </div>
