@@ -10,11 +10,11 @@ const Navbar = () => {
   return (
     <div className="container w-full mx-auto flex justify-between items-center p-2">
       {/* Left section*/}
-      <div className="flex items-center justify-between gap-5">
+      <div className="flex items-center justify-between gap-2">
         <div>
         <AiOutlineMenu onClick={()=>setNav(!nav)} size={20} className="cursor-pointer" />
         </div>
-        <h1 className="text-2xl sm:text-xl lg:text-2xl">
+        <h1 className="text-3xl sm:text-xl lg:text-2xl">
             Best<span className="font-bold">Eats</span>
         </h1>
         
@@ -24,7 +24,7 @@ const Navbar = () => {
             <p className="ml-2 mr-1">Pickup</p>
         </div>
       {/*middle section*/}
-      <div className="w-[200px] md:w-[900px]  flex items-center justify-start bg-gray-200 rounded-full px-1 py-1 gap-1">
+      <div className="max-w-[250px] md:w-[900px]  flex items-center justify-start bg-gray-200 rounded-full px-1 py-1 gap-1">
         <div className="">
             <AiOutlineSearch size={20} />
         </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
       </div>
 
       {/*Right section*/}
-      <div className="flex gap-1 items-center justify-between rounded-full bg-black text-white px-2 py-1">
+      <div className="hidden sm:flex gap-1 items-center justify-between rounded-full bg-black text-white px-2 py-1">
       <IoCart />
       <button className="text-[13px]">Cart</button>
       </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
         {/*Menu*/}
       <div className={nav?"bg-white w-[300px] h-screen fixed top-0 left-0 z-10 duration-300":"bg-white w-[300px] h-screen fixed top-0 left-[-100%] z-10 duration-500"}>
         <AiOutlineClose onClick={()=>setNav(!nav)}  className="cursor-pointer absolute top-4 right-4" size={30}/>
-        <h2 className="text-2xl p-4">Best<span className="font-bold">Eats</span></h2>
+        <h2 className=" text-3xl sm:text-2xl p-4">Best <span className="font-bold">Eats</span></h2>
         <nav>
             <ul className="flex flex-col text-gray-800 p-4">
                 <li className="flex items-center text-xl py-4"><TbTruckDelivery size={25} className="mr-4"/>Orders</li>
